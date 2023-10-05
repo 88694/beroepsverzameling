@@ -4,58 +4,82 @@ body {
     background: linear-gradient(to top, #000000bc, #000000bc),url(../Images/background.png);
 }
 
-
-.navbar {
-    color: white;
+#dumbell{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    height: 75vh;
+    
 }
 
-/* Style the logo */
-.logo {
-    font-size: 24px;
+#dumbell img{
+    animation: movement 3s forwards;
+    opacity: 0;
+    transform-origin: center;
+    max-height: 80%;
+    max-width: 100%;
 }
 
-/* Style the menu items */
-.menu ul {
-    list-style: none;
-    display: flex;
-}
+@keyframes movement{
+    0%{
+        
+        opacity: 0;
+        transform: rotate(350deg);
+    }
+    100%{
+        opacity: 0.3;
+        transform: rotate(360deg);
+        }
+    }
 
-.menu ul li {
-    margin-right: 20px;
-}
-
-.menu ul li:last-child {
-    margin-right: 0;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-.menu a:hover {
-    color: #66ccff; /* Change color on hover */
-}
-
-/* Style the hamburger menu icon */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 3px 0;
-    transition: background-color 0.3s ease;
-}
+    .navbar{
+        width: 90%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 1;
+    }
+    
+    .navbar ul li{
+        list-style:none;
+        align-items: center;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    
+    .navbar ul li a{
+        text-decoration: none;
+        align-items: center;
+        font-family: 'Belanosima', sans-serif;
+        color: #fff;
+        font-size: 25px;
+        position: relative;
+    }
+    
+    .navbar ul li ::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -7px;
+        transition: 0.75s;
+    }
+    
+    .navbar ul li:hover ::after{
+        width:100%;
+    }
+    
+    .logo {
+        width: 100px;
+        position: absolute;
+        top: 4%;
+        left: 5%;
+    }
 
 /* Make the navbar responsive */
 @media (max-width: 768px) {
