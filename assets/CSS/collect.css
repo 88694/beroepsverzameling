@@ -5,32 +5,32 @@ body {
 }
 
 .collection-item {
-    display: flex;
     margin-top: 50px;
+    margin-left: 38px;
+    border-radius: 20px;
     background-color: rgb(142, 142, 142);
-}
-
-.collection-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 100px;
-    background-color: white;
+    border-radius: 25px;
+    width: 100%;
 }
 
 .collection-left,
 .collection-right {
-    flex: 1;
     padding: 10px;
 }
 
 .collection-right img {
+    float: right;
     width: 100px;
     height: 100px;
 }
 
-/* Remove the fixed width and margin for each item */
-.collection-container .collection-item {
-    flex: 1;
-    margin: 10px; /* Add margin for spacing */
+.collection-box {
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(2, fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 14px;
+    margin: 20px;
+    width: 90%;
+    border-radius: 20px;
 }

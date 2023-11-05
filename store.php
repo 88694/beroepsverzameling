@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
-    <link rel="icon" href="./assets/Images/logo.png">
-    <link rel="stylesheet" href="./assets/CSS/collect.css">
-    <script src="./assets/JavaScript/Script.js"></script>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="icon" href="assets/Images/logo.png">
+    <link rel="stylesheet" href="assets/CSS/collect.css">
     <title> Verzameling </title>
 </head>
 
@@ -27,7 +26,8 @@
                 </ul>
             </div>
         </div>
-        <div class="collection-box">         
+
+        
     <?php
     include('./assets/src/db.php');
     $stmt = $db->prepare("SELECT * FROM collectie");
@@ -51,7 +51,6 @@
 
     echo '</div>';
     ?>
-</div>
 
 
 </body>
