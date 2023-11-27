@@ -10,7 +10,7 @@ body {
     border-radius: 20px;
     background-color: rgb(142, 142, 142);
     border-radius: 25px;
-    width: 100%;
+    width: 90%;
 }
 
 .collection-left,
@@ -26,11 +26,10 @@ body {
 
 .collection-box {
     display: grid;
-    background-color: black;
-    grid-template-columns: repeat(2, fr);
+    background-color: #000000ad;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 14px;
     margin: 20px;
-    width: 90%;
     border-radius: 20px;
 }

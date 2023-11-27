@@ -83,30 +83,52 @@ body {
 
 /* Make the navbar responsive */
 @media (max-width: 768px) {
-    .menu-toggle {
+    .navbar{
+        width: 90%;
+        margin: auto;
+        padding: 35px 0;
         display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 1;
     }
-
-    .menu {
-        display: none;
+    
+    .navbar ul li{
+        list-style:none;
+        align-items: center;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    
+    .navbar ul li a{
+        text-decoration: none;
+        align-items: center;
+        font-family: 'Belanosima', sans-serif;
+        color: #fff;
+        font-size: 25px;
+        position: relative;
+    }
+    
+    .navbar ul li ::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #fff;
         position: absolute;
-        top: 60px;
         left: 0;
-        background-color: #333;
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
+        bottom: -7px;
+        transition: 0.75s;
     }
-
-    .menu.active {
-        display: flex;
+    
+    .navbar ul li:hover ::after{
+        width:100%;
     }
-
-    .menu a {
-        padding: 15px 0;
-    }
-
-    .bar.active {
-        background-color: #66ccff; /* Change color on hover */
+    
+    .logo {
+        width: 100px;
+        position: absolute;
+        top: 4%;
+        left: 5%;
     }
 }

@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link rel="icon" href="assets/Images/logo.png">
     <link rel="stylesheet" href="assets/CSS/slideshow.css">
-    <script src="assets/JavaScript/Script.js"></script>
     <title> Verzameling </title>
 </head>
 
@@ -28,40 +27,37 @@
             </div>
         </div>
 
-      
+
+        <div class="intro-container">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia nisi, dolorem nihil minus maxime, voluptas, ea assumenda voluptates unde veritatis similique neque repudiandae illum doloremque est culpa architecto blanditiis. Dolorum.
+        </div>
+
+
+
+
+
+
 
         <div class="slideshow-container">
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="assets/Images/kevin-levrone.jpg" draggable="false" style="width:100%">
-              <div class="text">Caption Text</div>
+            <div class="slide fade">
+                <div class="slide-content">
+                    <h1>Sam Sulek</h1>
+                    <p><img src="assets/Images/sam-sulek.jpeg" height="700px" alt="sam-sulek" class="pictures"></p>
+                </div>
             </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="assets/Images/sam-sulek.jpeg" draggable="false" style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="assets/Images/manic-mike.png" draggable="false" style="width:100%">
-              <div class="text">Caption Three</div>
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
+    
+            <div class="slide fade">
+                <div class="slide-content">
+                    <h1>Kevin Levrone</h1>
+                    <p><img src="assets/Images/kevin-levrone.jpg" alt="kevin-levrone" class="pictures" id="Kevin" height="700px"></p>
+                </div>
             </div>
 
-
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    
+        <script src="assets/JavaScript/Script.js"></script>
 </body>
 
 </html>
